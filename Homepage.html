@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apex Artisanal Bakery makes fresh, handcrafted breads, pastries and cakes in South Africa.">
+    <title>Apex Artisanal Bakery | Freshly Baked</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="Homepage.html">Apex <span>Bakery</span></a>
+            <div class="nav-links">
+                <a href="#about">Our story</a>
+                <a href="#menu">Menu</a>
+                <a href="Products.html">Products</a>
+                <a href="#gallery">Gallery</a>
+                <a class="nav-cta" href="#contact">Order now</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home" aria-label="Featured products">
+            <article class="hero-slide is-active">
+                <img class="hero-image" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1800&h=1000&q=85" alt="Fresh artisan bread">
+                <div class="hero-content">
+                    <span class="eyebrow">Baked before sunrise</span>
+                    <h1>Good bread.<br>Good mood.</h1>
+                    <p class="hero-copy">Our signature sourdough is slowly fermented, hand-shaped and baked until its crust sings.</p>
+                    <div class="hero-meta"><span class="price">R55.00</span><a class="button" href="Products.html">View products</a></div>
+                </div>
+            </article>
+            <article class="hero-slide">
+                <img class="hero-image" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1800&h=1000&q=85" alt="Butter croissants">
+                <div class="hero-content">
+                    <span class="eyebrow">Layers of joy</span>
+                    <h1>Make room<br>for flaky.</h1>
+                    <p class="hero-copy">A generous butter croissant with crisp layers, a tender centre and a golden finish.</p>
+                    <div class="hero-meta"><span class="price">R25.00</span><a class="button" href="Products.html">View products</a></div>
+                </div>
+            </article>
+            <article class="hero-slide">
+                <img class="hero-image" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1800&h=1000&q=85" alt="Chocolate celebration cake">
+                <div class="hero-content">
+                    <span class="eyebrow">Made for the moment</span>
+                    <h1>Say it<br>with cake.</h1>
+                    <p class="hero-copy">Rich chocolate sponge, silky frosting and enough joy to turn an ordinary day into a celebration.</p>
+                    <div class="hero-meta"><span class="price">R180.00</span><a class="button" href="Products.html">View products</a></div>
+                </div>
+            </article>
+            <div class="hero-controls" aria-label="Featured product controls">
+                <button class="hero-arrow" type="button" data-direction="previous" aria-label="Previous product">&#8592;</button>
+                <div class="dots">
+                    <button class="dot is-active" type="button" aria-label="Show sourdough" aria-current="true"></button>
+                    <button class="dot" type="button" aria-label="Show croissant"></button>
+                    <button class="dot" type="button" aria-label="Show chocolate cake"></button>
+                </div>
+                <button class="hero-arrow" type="button" data-direction="next" aria-label="Next product">&#8594;</button>
+            </div>
+        </section>
+        <section class="intro" id="about">
+            <div><span class="section-kicker">The Apex standard</span><h2>Made by hand.<br>Made to share.</h2></div>
+            <p>Welcome to Apex Artisanal Bakery, where traditional recipes meet bright, modern flavour. Every loaf, pastry and cake is made with care and the finest ingredients in our Johannesburg kitchen.</p>
+        </section>
+        <section class="content-section" id="menu">
+            <span class="section-kicker">A little something for everyone</span>
+            <h2>Our menu</h2>
+            <table class="product-table">
+                <thead><tr><th>Item</th><th>Description</th><th>Price</th></tr></thead>
+                <tbody>
+                    <tr><td>Sourdough Bread</td><td>Traditional artisan sourdough loaf</td><td>R55.00</td></tr>
+                    <tr><td>Croissant</td><td>Buttery and flaky French pastry</td><td>R25.00</td></tr>
+                    <tr><td>Chocolate Cake</td><td>Rich chocolate sponge with frosting</td><td>R180.00</td></tr>
+                    <tr><td>Blueberry Muffin</td><td>Freshly baked with real blueberries</td><td>R30.00</td></tr>
+                    <tr><td>Cinnamon Roll</td><td>Soft roll with cinnamon filling</td><td>R35.00</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="content-section" id="gallery">
+            <span class="section-kicker">Fresh from the oven</span>
+            <h2>In the bakery</h2>
+            <div class="gallery-grid">
+                <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Fresh artisan bread"><figcaption>Fresh artisan bread</figcaption><span class="card-detail">View details &rarr;</span></figure>
+                <figure><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Butter croissant"><figcaption>Butter croissants</figcaption><span class="card-detail">View details &rarr;</span></figure>
+                <figure><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Chocolate cake"><figcaption>Chocolate celebration cake</figcaption><span class="card-detail">View details &rarr;</span></figure>
+            </div>
+        </section>
+        <section class="content-section" id="contact">
+            <span class="section-kicker">Come say hello</span>
+            <h2>Contact us</h2>
+            <p><strong>3 Bailey Lane, Arcadia, Pretoria, South Africa</strong><br>+27 12 345 6789 · info@apexartisanalbakery.com</p>
+            <div class="map-frame">
+                <iframe src="https://www.google.com/maps?q=3+Bailey+Lane,+Arcadia,+Pretoria,+South+Africa&output=embed" title="Map showing Apex Artisanal Bakery at 3 Bailey Lane, Arcadia, Pretoria" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form action="#" method="post">
+                <label for="name">Full name</label><input type="text" id="name" name="name" required>
+                <label for="email">Email</label><input type="email" id="email" name="email" required>
+                <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+                <button class="button" type="submit">Send message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><p><strong>Apex Artisanal Bakery</strong></p><p>Freshly baked · Handmade · Quality guaranteed</p><p>&copy; 2026 Apex Artisanal Bakery</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

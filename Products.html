@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore breads, pastries, cakes, muffins and cookies from Apex Artisanal Bakery.">
+    <title>Products | Apex Artisanal Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" style="background: var(--ink); position: relative;">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="Homepage.html">Apex <span>Bakery</span></a>
+            <div class="nav-links">
+                <a href="Homepage.html#about">Our story</a>
+                <a href="Homepage.html#menu">Menu</a>
+                <a href="Products.html" aria-current="page">Products</a>
+                <a href="Homepage.html#gallery">Gallery</a>
+                <a class="nav-cta" href="Homepage.html#contact">Order now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-section">
+        <span class="section-kicker">Freshly baked every day</span>
+        <h1>Our products</h1>
+        <p>Explore our breads, pastries, cakes, muffins and cookies. Every item is handcrafted with premium ingredients in our Johannesburg kitchen.</p>
+
+        <div class="product-gallery" aria-label="Featured bakery products">
+            <figure><img src="Assets/bread2.jpeg" alt="Fresh artisan sourdough bread"><figcaption>Sourdough bread</figcaption><button class="card-detail" type="button" data-product="Sourdough bread" data-ingredients="Flour, water, sourdough starter and sea salt">View details &rarr;</button></figure>
+            <figure><img src="Assets/bread3.jpeg" alt="Freshly baked artisan bread"><figcaption>Daily bread selection</figcaption><button class="card-detail" type="button" data-product="Daily bread selection" data-ingredients="Wheat flour, water, yeast, sea salt and malt">View details &rarr;</button></figure>
+            <figure><img src="Assets/muffin2.jpeg" alt="Freshly baked blueberry muffin"><figcaption>Blueberry muffins</figcaption><button class="card-detail" type="button" data-product="Blueberry muffins" data-ingredients="Flour, blueberries, butter, eggs, milk and sugar">View details &rarr;</button></figure>
+            <figure><img src="Assets/muffin3.jpeg" alt="Freshly baked chocolate muffin"><figcaption>Chocolate muffins</figcaption><button class="card-detail" type="button" data-product="Chocolate muffins" data-ingredients="Flour, cocoa, chocolate chips, butter, eggs, milk and sugar">View details &rarr;</button></figure>
+            <figure><img src="Assets/cake 1.jpeg" alt="Celebration cake"><figcaption>Celebration cakes</figcaption><button class="card-detail" type="button" data-product="Celebration cakes" data-ingredients="Vanilla sponge, eggs, butter, flour, sugar and vanilla buttercream">View details &rarr;</button></figure>
+            <figure><img src="Assets/cake2.jpeg" alt="Chocolate cake"><figcaption>Chocolate cake</figcaption><button class="card-detail" type="button" data-product="Chocolate cake" data-ingredients="Flour, cocoa, eggs, butter, sugar, milk and chocolate ganache">View details &rarr;</button></figure>
+            <figure><img src="Assets/cake3.jpeg" alt="Decorated vanilla cake"><figcaption>Decorated cakes</figcaption><button class="card-detail" type="button" data-product="Decorated cakes" data-ingredients="Vanilla sponge, eggs, flour, butter, sugar and fondant decorations">View details &rarr;</button></figure>
+            <figure><img src="Assets/cake4.jpeg" alt="Freshly baked cake"><figcaption>Speciality cakes</figcaption><button class="card-detail" type="button" data-product="Speciality cakes" data-ingredients="Flour, eggs, butter, sugar, cream and seasonal flavourings">View details &rarr;</button></figure>
+        </div>
+
+        <h2>Breads</h2>
+        <ul>
+            <li>Sourdough Bread - R55.00</li>
+            <li>Whole Wheat Bread - R45.00</li>
+            <li>French Baguette - R40.00</li>
+            <li>Garlic Bread - R35.00</li>
+        </ul>
+
+        <h2>Pastries</h2>
+        <ul>
+            <li>Butter Croissant - R25.00</li>
+            <li>Chocolate Croissant - R30.00</li>
+            <li>Cinnamon Roll - R35.00</li>
+            <li>Apple Danish - R32.00</li>
+        </ul>
+
+        <h2>Cakes</h2>
+        <ul>
+            <li>Chocolate Cake - R180.00</li>
+            <li>Vanilla Cake - R170.00</li>
+            <li>Red Velvet Cake - R200.00</li>
+            <li>Cheesecake - R190.00</li>
+        </ul>
+
+        <h2>Cookies &amp; Muffins</h2>
+        <ul>
+            <li>Chocolate Chip Cookies - R15.00 each</li>
+            <li>Oatmeal Cookies - R15.00 each</li>
+            <li>Blueberry Muffin - R30.00</li>
+            <li>Chocolate Muffin - R30.00</li>
+        </ul>
+
+        <h2>Product price list</h2>
+        <table class="product-table">
+            <thead>
+                <tr><th>Product</th><th>Category</th><th>Price</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Sourdough Bread</td><td>Bread</td><td>R55.00</td></tr>
+                <tr><td>Butter Croissant</td><td>Pastry</td><td>R25.00</td></tr>
+                <tr><td>Chocolate Cake</td><td>Cake</td><td>R180.00</td></tr>
+                <tr><td>Vanilla Cake</td><td>Cake</td><td>R170.00</td></tr>
+                <tr><td>Red Velvet Cake</td><td>Cake</td><td>R200.00</td></tr>
+                <tr><td>Cheesecake</td><td>Cake</td><td>R190.00</td></tr>
+                <tr><td>Blueberry Muffin</td><td>Muffin</td><td>R30.00</td></tr>
+                <tr><td>Chocolate Chip Cookie</td><td>Cookie</td><td>R15.00 each</td></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <dialog class="detail-dialog" aria-labelledby="detail-title">
+        <button class="dialog-close" type="button" aria-label="Close details">&times;</button>
+        <span class="section-kicker">Made in our kitchen</span>
+        <h2 id="detail-title">Product details</h2>
+        <p class="detail-ingredients"></p>
+    </dialog>
+
+    <footer class="site-footer">
+        <p><strong>Apex Artisanal Bakery</strong></p>
+        <p>Freshly Baked · Handmade · Quality You Can Trust</p>
+        <p>&copy; 2026 Apex Artisanal Bakery</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
