@@ -35,9 +35,9 @@ Then visit `http://localhost:8000/index.html`.
 
 ## Deployment
 
-The project uses relative page and asset paths and can be deployed to Netlify or GitHub Pages. The deployment URL is not known yet, so `sitemap.xml` has not been generated. Once a public URL is selected, create the sitemap with that URL and add its location to `robots.txt`.
+The project uses relative page and asset paths and is deployed-ready for Vercel. The sitemap is available at [sitemap.xml](./sitemap.xml), and [robots.txt](./robots.txt) points search engines to it.
 
-The [_headers](./_headers) file is used by Netlify for security headers. GitHub Pages does not process `_headers`; configure equivalent headers through the hosting platform if available.
+The [_headers](./_headers) file is used by Netlify, while [vercel.json](./vercel.json) provides equivalent security headers for Vercel. GitHub Pages does not process either file; configure equivalent headers through the hosting platform if available.
 
 ## Static-site limitations
 

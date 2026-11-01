@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://apexbakery.vercel.app/sitemap.xml
