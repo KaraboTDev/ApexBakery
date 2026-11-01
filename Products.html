@@ -6,17 +6,23 @@
     <meta name="description" content="Explore breads, pastries, cakes, muffins and cookies from Apex Artisanal Bakery.">
     <title>Products | Apex Artisanal Bakery</title>
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Bakery","name":"Apex Artisanal Bakery","address":{"@type":"PostalAddress","streetAddress":"3 Bailey Lane, Arcadia","addressLocality":"Pretoria","addressCountry":"South Africa"},"telephone":"+27 12 345 6789","email":"info@apexartisanalbakery.com"}
+    </script>
 </head>
 <body>
     <header class="site-header" style="background: var(--ink); position: relative;">
         <nav class="navbar" aria-label="Main navigation">
             <a class="logo" href="Homepage.html">Apex <span>Bakery</span></a>
-            <div class="nav-links">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="primary-navigation">
                 <a href="Homepage.html#about">Our story</a>
-                <a href="Homepage.html#menu">Menu</a>
                 <a href="Products.html" aria-current="page">Products</a>
-                <a href="Homepage.html#gallery">Gallery</a>
-                <a class="nav-cta" href="Homepage.html#contact">Order now</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a class="nav-cta" href="Contact.html">Contact</a>
             </div>
         </nav>
     </header>
@@ -26,15 +32,40 @@
         <h1>Our products</h1>
         <p>Explore our breads, pastries, cakes, muffins and cookies. Every item is handcrafted with premium ingredients in our Johannesburg kitchen.</p>
 
+        <div class="product-tools" aria-label="Product search and filters">
+            <div class="product-search-field">
+                <label for="product-search">Search products</label>
+                <input id="product-search" type="search" placeholder="Search by product name" autocomplete="off">
+            </div>
+            <div class="product-select-field">
+                <label for="product-category">Filter by category</label>
+                <select id="product-category">
+                    <option value="all">All categories</option>
+                    <option value="bread">Bread</option>
+                    <option value="muffin">Muffin</option>
+                    <option value="cake">Cake</option>
+                </select>
+            </div>
+            <div class="product-select-field">
+                <label for="product-sort">Sort products</label>
+                <select id="product-sort">
+                    <option value="default">Featured</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+        </div>
+        <p id="product-results" class="form-feedback product-results" role="status" aria-live="polite"></p>
+
         <div class="product-gallery" aria-label="Featured bakery products">
-            <figure><img src="Assets/bread2.jpeg" alt="Fresh artisan sourdough bread"><figcaption>Sourdough bread</figcaption><button class="card-detail" type="button" data-product="Sourdough bread" data-ingredients="Flour, water, sourdough starter and sea salt">View details &rarr;</button></figure>
-            <figure><img src="Assets/bread3.jpeg" alt="Freshly baked artisan bread"><figcaption>Daily bread selection</figcaption><button class="card-detail" type="button" data-product="Daily bread selection" data-ingredients="Wheat flour, water, yeast, sea salt and malt">View details &rarr;</button></figure>
-            <figure><img src="Assets/muffin2.jpeg" alt="Freshly baked blueberry muffin"><figcaption>Blueberry muffins</figcaption><button class="card-detail" type="button" data-product="Blueberry muffins" data-ingredients="Flour, blueberries, butter, eggs, milk and sugar">View details &rarr;</button></figure>
-            <figure><img src="Assets/chocolate-zucchini-muffins-5.jpg" alt="Freshly baked chocolate muffin"><figcaption>Chocolate muffins</figcaption><button class="card-detail" type="button" data-product="Chocolate muffins" data-ingredients="Flour, cocoa, chocolate chips, butter, eggs, milk and sugar">View details &rarr;</button></figure>
-            <figure><img src="Assets/cake 1.jpeg" alt="Celebration cake"><figcaption>Celebration cakes</figcaption><button class="card-detail" type="button" data-product="Celebration cakes" data-ingredients="Vanilla sponge, eggs, butter, flour, sugar and vanilla buttercream">View details &rarr;</button></figure>
-            <figure><img src="Assets/cake2.jpeg" alt="Chocolate cake"><figcaption>Chocolate cake</figcaption><button class="card-detail" type="button" data-product="Chocolate cake" data-ingredients="Flour, cocoa, eggs, butter, sugar, milk and chocolate ganache">View details &rarr;</button></figure>
-            <figure><img src="Assets/cake3.jpeg" alt="Decorated vanilla cake"><figcaption>Decorated cakes</figcaption><button class="card-detail" type="button" data-product="Decorated cakes" data-ingredients="Vanilla sponge, eggs, flour, butter, sugar and fondant decorations">View details &rarr;</button></figure>
-            <figure><img src="Assets/cake4.jpeg" alt="Freshly baked cake"><figcaption>Speciality cakes</figcaption><button class="card-detail" type="button" data-product="Speciality cakes" data-ingredients="Flour, eggs, butter, sugar, cream and seasonal flavourings">View details &rarr;</button></figure>
+            <figure data-category="bread" data-name="Sourdough bread"><img src="Assets/bread2.jpeg" alt="Fresh artisan sourdough bread" loading="lazy" decoding="async"><figcaption>Sourdough bread</figcaption><button class="card-detail" type="button" data-product="Sourdough bread" data-ingredients="Flour, water, sourdough starter and sea salt">View details &rarr;</button></figure>
+            <figure data-category="bread" data-name="Daily bread selection"><img src="Assets/bread3.jpeg" alt="Freshly baked artisan bread" loading="lazy" decoding="async"><figcaption>Daily bread selection</figcaption><button class="card-detail" type="button" data-product="Daily bread selection" data-ingredients="Wheat flour, water, yeast, sea salt and malt">View details &rarr;</button></figure>
+            <figure data-category="muffin" data-name="Blueberry muffins"><img src="Assets/muffin2.jpeg" alt="Freshly baked blueberry muffin" loading="lazy" decoding="async"><figcaption>Blueberry muffins</figcaption><button class="card-detail" type="button" data-product="Blueberry muffins" data-ingredients="Flour, blueberries, butter, eggs, milk and sugar">View details &rarr;</button></figure>
+            <figure data-category="muffin" data-name="Chocolate muffins"><img src="Assets/chocolate-zucchini-muffins-5.jpg" alt="Freshly baked chocolate muffin" loading="lazy" decoding="async"><figcaption>Chocolate muffins</figcaption><button class="card-detail" type="button" data-product="Chocolate muffins" data-ingredients="Flour, cocoa, chocolate chips, butter, eggs, milk and sugar">View details &rarr;</button></figure>
+            <figure data-category="cake" data-name="Celebration cakes"><img src="Assets/cake 1.jpeg" alt="Celebration cake" loading="lazy" decoding="async"><figcaption>Celebration cakes</figcaption><button class="card-detail" type="button" data-product="Celebration cakes" data-ingredients="Vanilla sponge, eggs, butter, flour, sugar and vanilla buttercream">View details &rarr;</button></figure>
+            <figure data-category="cake" data-name="Chocolate cake"><img src="Assets/cake2.jpeg" alt="Chocolate cake" loading="lazy" decoding="async"><figcaption>Chocolate cake</figcaption><button class="card-detail" type="button" data-product="Chocolate cake" data-ingredients="Flour, cocoa, eggs, butter, sugar, milk and chocolate ganache">View details &rarr;</button></figure>
+            <figure data-category="cake" data-name="Decorated cakes"><img src="Assets/cake3.jpeg" alt="Decorated vanilla cake" loading="lazy" decoding="async"><figcaption>Decorated cakes</figcaption><button class="card-detail" type="button" data-product="Decorated cakes" data-ingredients="Vanilla sponge, eggs, flour, butter, sugar and fondant decorations">View details &rarr;</button></figure>
+            <figure data-category="cake" data-name="Speciality cakes"><img src="Assets/cake4.jpeg" alt="Freshly baked cake" loading="lazy" decoding="async"><figcaption>Speciality cakes</figcaption><button class="card-detail" type="button" data-product="Speciality cakes" data-ingredients="Flour, eggs, butter, sugar, cream and seasonal flavourings">View details &rarr;</button></figure>
         </div>
 
         <h2>Breads</h2>
@@ -70,7 +101,8 @@
         </ul>
 
         <h2>Product price list</h2>
-        <table class="product-table">
+        <div class="table-scroll">
+            <table class="product-table">
             <thead>
                 <tr><th>Product</th><th>Category</th><th>Price</th></tr>
             </thead>
@@ -84,7 +116,8 @@
                 <tr><td>Blueberry Muffin</td><td>Muffin</td><td>R30.00</td></tr>
                 <tr><td>Chocolate Chip Cookie</td><td>Cookie</td><td>R15.00 each</td></tr>
             </tbody>
-        </table>
+            </table>
+        </div>
     </main>
 
     <dialog class="detail-dialog" aria-labelledby="detail-title">

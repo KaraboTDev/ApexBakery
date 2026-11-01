@@ -6,17 +6,24 @@
     <meta name="description" content="Apex Artisanal Bakery makes fresh, handcrafted breads, pastries and cakes in South Africa.">
     <title>Apex Artisanal Bakery | Freshly Baked</title>
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Bakery","name":"Apex Artisanal Bakery","address":{"@type":"PostalAddress","streetAddress":"3 Bailey Lane, Arcadia","addressLocality":"Pretoria","addressCountry":"South Africa"},"telephone":"+27 12 345 6789","email":"info@apexartisanalbakery.com"}
+    </script>
 </head>
 <body>
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
             <a class="logo" href="Homepage.html">Apex <span>Bakery</span></a>
-            <div class="nav-links">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="primary-navigation">
                 <a href="#about">Our story</a>
                 <a href="#menu">Menu</a>
                 <a href="Products.html">Products</a>
-                <a href="#gallery">Gallery</a>
-                <a class="nav-cta" href="#contact">Order now</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a class="nav-cta" href="Contact.html">Contact</a>
             </div>
         </nav>
     </header>
@@ -35,7 +42,7 @@
                 <img class="hero-image" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1800&h=1000&q=85" alt="Butter croissants">
                 <div class="hero-content">
                     <span class="eyebrow">Layers of joy</span>
-                    <h1>Make room<br>for flaky.</h1>
+                    <h2>Make room<br>for flaky.</h2>
                     <p class="hero-copy">A generous butter croissant with crisp layers, a tender centre and a golden finish.</p>
                     <div class="hero-meta"><span class="price">R25.00</span><a class="button" href="Products.html">View products</a></div>
                 </div>
@@ -44,7 +51,7 @@
                 <img class="hero-image" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1800&h=1000&q=85" alt="Chocolate celebration cake">
                 <div class="hero-content">
                     <span class="eyebrow">Made for the moment</span>
-                    <h1>Say it<br>with cake.</h1>
+                    <h2>Say it<br>with cake.</h2>
                     <p class="hero-copy">Rich chocolate sponge, silky frosting and enough joy to turn an ordinary day into a celebration.</p>
                     <div class="hero-meta"><span class="price">R180.00</span><a class="button" href="Products.html">View products</a></div>
                 </div>
@@ -66,7 +73,8 @@
         <section class="content-section" id="menu">
             <span class="section-kicker">A little something for everyone</span>
             <h2>Our menu</h2>
-            <table class="product-table">
+            <div class="table-scroll">
+                <table class="product-table">
                 <thead><tr><th>Item</th><th>Description</th><th>Price</th></tr></thead>
                 <tbody>
                     <tr><td>Sourdough Bread</td><td>Traditional artisan sourdough loaf</td><td>R55.00</td></tr>
@@ -75,15 +83,16 @@
                     <tr><td>Blueberry Muffin</td><td>Freshly baked with real blueberries</td><td>R30.00</td></tr>
                     <tr><td>Cinnamon Roll</td><td>Soft roll with cinnamon filling</td><td>R35.00</td></tr>
                 </tbody>
-            </table>
+                </table>
+            </div>
         </section>
         <section class="content-section" id="gallery">
             <span class="section-kicker">Fresh from the oven</span>
             <h2>In the bakery</h2>
             <div class="gallery-grid">
-                <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Fresh artisan bread"><figcaption>Fresh artisan bread</figcaption><span class="card-detail">View details &rarr;</span></figure>
-                <figure><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Butter croissant"><figcaption>Butter croissants</figcaption><span class="card-detail">View details &rarr;</span></figure>
-                <figure><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Chocolate cake"><figcaption>Chocolate celebration cake</figcaption><span class="card-detail">View details &rarr;</span></figure>
+                <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Fresh artisan bread" loading="lazy"><figcaption>Fresh artisan bread</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=85" data-alt="Fresh artisan bread">View image &rarr;</button></figure>
+                <figure><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Butter croissant" loading="lazy"><figcaption>Butter croissants</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1400&q=85" data-alt="Butter croissants">View image &rarr;</button></figure>
+                <figure><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Chocolate cake" loading="lazy"><figcaption>Chocolate celebration cake</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1400&q=85" data-alt="Chocolate celebration cake">View image &rarr;</button></figure>
             </div>
         </section>
         <section class="content-section" id="contact">
@@ -93,14 +102,20 @@
             <div class="map-frame">
                 <iframe src="https://www.google.com/maps?q=3+Bailey+Lane,+Arcadia,+Pretoria,+South+Africa&output=embed" title="Map showing Apex Artisanal Bakery at 3 Bailey Lane, Arcadia, Pretoria" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <form action="#" method="post">
-                <label for="name">Full name</label><input type="text" id="name" name="name" required>
-                <label for="email">Email</label><input type="email" id="email" name="email" required>
-                <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+            <form data-mail-form data-recipient="info@apexartisanalbakery.com" data-form-type="contact" novalidate>
+                <label for="name">Full name</label><input type="text" id="name" name="name" autocomplete="name" required minlength="2">
+                <label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required>
+                <label for="message">Message</label><textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+                <input type="hidden" name="category" value="Homepage contact">
+                <p class="form-feedback" data-form-feedback role="status" aria-live="polite"></p>
                 <button class="button" type="submit">Send message</button>
             </form>
         </section>
     </main>
+    <dialog class="lightbox-dialog" aria-label="Expanded bakery image">
+        <button class="dialog-close lightbox-close" type="button" aria-label="Close expanded image">&times;</button>
+        <img class="lightbox-image" alt="">
+    </dialog>
     <footer class="site-footer"><p><strong>Apex Artisanal Bakery</strong></p><p>Freshly baked · Handmade · Quality guaranteed</p><p>&copy; 2026 Apex Artisanal Bakery</p></footer>
     <script src="script.js"></script>
 </body>

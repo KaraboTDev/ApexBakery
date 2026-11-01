@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send an enquiry to Apex Artisanal Bakery about products, custom cakes, orders or other bakery services.">
+    <title>Make an Enquiry | Apex Artisanal Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Bakery","name":"Apex Artisanal Bakery","address":{"@type":"PostalAddress","streetAddress":"3 Bailey Lane, Arcadia","addressLocality":"Pretoria","addressCountry":"South Africa"},"telephone":"+27 12 345 6789","email":"info@apexartisanalbakery.com"}
+    </script>
+</head>
+<body>
+    <header class="site-header" style="background: var(--ink); position: relative;">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="Homepage.html">Apex <span>Bakery</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="primary-navigation">
+                <a href="Homepage.html#about">Our story</a>
+                <a href="Products.html">Products</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="enquiry.html" aria-current="page">Enquiry</a>
+                <a class="nav-cta" href="Contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-section">
+        <span class="section-kicker">Tell us what you need</span>
+        <h1>Make an enquiry</h1>
+        <div class="enquiry-intro">
+            <strong>Planning something delicious?</strong>
+            <p>Share the details below and we will confirm costs, availability and next steps by email. This static form opens your email application; it does not store your information.</p>
+        </div>
+
+        <form class="enquiry-form" data-mail-form data-recipient="info@apexartisanalbakery.com" data-form-type="enquiry" novalidate>
+            <fieldset>
+                <legend>Your details</legend>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="enquiry-name">Full name</label>
+                        <input type="text" id="enquiry-name" name="name" autocomplete="name" required minlength="2" placeholder="e.g. Alex Smith">
+                    </div>
+                    <div class="form-field">
+                        <label for="enquiry-email">Email address</label>
+                        <input type="email" id="enquiry-email" name="email" autocomplete="email" required placeholder="you@example.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="enquiry-phone">Telephone number <span>(optional)</span></label>
+                        <input type="tel" id="enquiry-phone" name="phone" autocomplete="tel" placeholder="+27 ...">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>What can we help with?</legend>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="enquiry-type">Type of enquiry</label>
+                        <select id="enquiry-type" name="enquiryType" required>
+                            <option value="">Select an enquiry type</option>
+                            <option value="Product information">Product information</option>
+                            <option value="Custom cake enquiry">Custom cake enquiry</option>
+                            <option value="Order enquiry">Order enquiry</option>
+                            <option value="Volunteering or sponsorship">Volunteering or sponsorship</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="enquiry-option">Product or service</label>
+                        <select id="enquiry-option" name="option" required>
+                            <option value="">Select a product or service</option>
+                            <option value="Bread">Bread</option>
+                            <option value="Pastries">Pastries</option>
+                            <option value="Cakes">Cakes</option>
+                            <option value="Cookies and muffins">Cookies and muffins</option>
+                            <option value="Volunteering or sponsorship">Volunteering or sponsorship</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="enquiry-date">Preferred date <span>(optional)</span></label>
+                        <input type="date" id="enquiry-date" name="preferredDate">
+                    </div>
+                    <div class="form-field">
+                        <label for="enquiry-quantity">Estimated quantity <span>(optional)</span></label>
+                        <input type="text" id="enquiry-quantity" name="quantity" placeholder="e.g. 2 cakes or 30 muffins">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional information</legend>
+                <label for="enquiry-message">Tell us more</label>
+                <textarea id="enquiry-message" name="message" rows="7" required minlength="10" placeholder="Include flavours, quantities, dates or design details where relevant."></textarea>
+                <small class="field-help">Please include enough detail for the bakery team to understand your request.</small>
+            </fieldset>
+
+            <p class="form-feedback" data-form-feedback role="status" aria-live="polite"></p>
+            <button class="button" type="submit">Prepare enquiry email</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Apex Artisanal Bakery</strong></p>
+        <p>Freshly baked · Handmade · Quality guaranteed</p>
+        <p>&copy; 2026 Apex Artisanal Bakery</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

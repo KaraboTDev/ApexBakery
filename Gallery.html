@@ -3,60 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Apex Artisanal Bakery</title>
+    <meta name="description" content="View fresh breads, pastries and cakes from Apex Artisanal Bakery in Pretoria.">
+    <title>Bakery Gallery | Apex Artisanal Bakery</title>
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Apex Artisanal Bakery",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Bailey Lane, Arcadia",
+        "addressLocality": "Pretoria",
+        "addressCountry": "South Africa"
+      },
+      "telephone": "+27 12 345 6789",
+      "email": "info@apexartisanalbakery.com"
+    }
+    </script>
 </head>
 <body>
-
     <header class="site-header" style="background: var(--ink); position: relative;">
-        <h1>Apex Artisanal Bakery</h1>
-        <p>Freshly Baked Happiness Every Day</p>
-
-        <hr>
-
         <nav class="navbar" aria-label="Main navigation">
             <a class="logo" href="Homepage.html">Apex <span>Bakery</span></a>
-            <div class="nav-links"><a href="Homepage.html#about">Our story</a><a href="Homepage.html#menu">Menu</a><a href="Homepage.html#gallery">Gallery</a><a class="nav-cta" href="Homepage.html#contact">Order now</a></div>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="primary-navigation">
+                <a href="Homepage.html#about">Our story</a>
+                <a href="Products.html">Products</a>
+                <a href="Gallery.html" aria-current="page">Gallery</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a class="nav-cta" href="Contact.html">Contact</a>
+            </div>
         </nav>
-
-        <hr>
     </header>
-
     <main class="content-section">
-
         <span class="section-kicker">Fresh from the oven</span>
-        <h2>Our gallery</h2>
-
-        <p>
-            Take a look at some of our freshly baked breads, delicious cakes,
-            pastries, cookies, and muffins made with love every day.
-        </p>
-
+        <h1>Our gallery</h1>
+        <p>Take a look at some of our freshly baked breads, delicious cakes, pastries, cookies, and muffins made with care every day.</p>
         <div class="gallery-grid">
-
-            <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Fresh artisan bread"><figcaption>Fresh artisan bread</figcaption><span class="card-detail">View details &rarr;</span></figure>
-            <figure><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Butter croissant"><figcaption>Butter croissants</figcaption><span class="card-detail">View details &rarr;</span></figure>
-            <figure><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Chocolate cake"><figcaption>Chocolate cake</figcaption><span class="card-detail">View details &rarr;</span></figure>
+            <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Fresh artisan bread" loading="lazy"><figcaption>Fresh artisan bread</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=85" data-alt="Fresh artisan bread">View image &rarr;</button></figure>
+            <figure><img src="Assets/bread1.jpeg" alt="Whole wheat bread" loading="lazy" decoding="async"><figcaption>Whole wheat bread</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="Assets/bread1.jpeg" data-alt="Whole wheat bread">View image &rarr;</button></figure>
+            <figure><img src="Assets/bread3.jpeg" alt="French baguette" loading="lazy" decoding="async"><figcaption>French baguette</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="Assets/bread3.jpeg" data-alt="French baguette">View image &rarr;</button></figure>
+            <figure><img src="Assets/bread4.jpeg" alt="Garlic bread" loading="lazy" decoding="async"><figcaption>Garlic bread</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="Assets/bread4.jpeg" data-alt="Garlic bread">View image &rarr;</button></figure>
+            <figure><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Butter croissants" loading="lazy"><figcaption>Butter croissants</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1400&q=85" data-alt="Butter croissants">View image &rarr;</button></figure>
+            <figure><img src="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=800&q=80" alt="Chocolate croissant" loading="lazy"><figcaption>Chocolate croissant</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1400&q=85" data-alt="Chocolate croissant">View image &rarr;</button></figure>
+            <figure><img src="Assets/muffin5.jpeg" alt="Cinnamon roll" loading="lazy" decoding="async"><figcaption>Cinnamon rolls</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="Assets/muffin5.jpeg" data-alt="Cinnamon rolls">View image &rarr;</button></figure>
+            <figure><img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80" alt="Apple Danish pastry" loading="lazy"><figcaption>Apple Danish</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=1400&q=85" data-alt="Apple Danish pastry">View image &rarr;</button></figure>
+            <figure><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Chocolate cake" loading="lazy"><figcaption>Chocolate cake</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1400&q=85" data-alt="Chocolate cake">View image &rarr;</button></figure>
+            <figure><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=80" alt="Vanilla-frosted celebration cake" loading="lazy"><figcaption>Vanilla cake</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=1400&q=85" data-alt="Vanilla-frosted celebration cake">View image &rarr;</button></figure>
+            <figure><img src="https://plus.unsplash.com/premium_photo-1713447395823-2e0b40b75a89?auto=format&fit=crop&w=800&q=80" alt="Red velvet celebration cake" loading="lazy"><figcaption>Red velvet cake</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://plus.unsplash.com/premium_photo-1713447395823-2e0b40b75a89?auto=format&fit=crop&w=1400&q=85" data-alt="Red velvet celebration cake">View image &rarr;</button></figure>
+            <figure><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" alt="Slice of cheesecake with berries" loading="lazy"><figcaption>Cheesecake</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1400&q=85" data-alt="Slice of cheesecake with berries">View image &rarr;</button></figure>
+            <figure><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80" alt="Chocolate chip cookies" loading="lazy"><figcaption>Chocolate chip cookies</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1400&q=85" data-alt="Chocolate chip cookies">View image &rarr;</button></figure>
+            <figure><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80" alt="Oatmeal cookies" loading="lazy"><figcaption>Oatmeal cookies</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=1400&q=85" data-alt="Oatmeal cookies">View image &rarr;</button></figure>
+            <figure><img src="Assets/muffin2.jpeg" alt="Blueberry muffin" loading="lazy" decoding="async"><figcaption>Blueberry muffins</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="Assets/muffin2.jpeg" data-alt="Blueberry muffins">View image &rarr;</button></figure>
+            <figure><img src="Assets/chocolate-zucchini-muffins-5.jpg" alt="Chocolate muffin" loading="lazy" decoding="async"><figcaption>Chocolate muffins</figcaption><button class="card-detail lightbox-trigger" type="button" data-image="Assets/chocolate-zucchini-muffins-5.jpg" data-alt="Chocolate muffins">View image &rarr;</button></figure>
         </div>
-
     </main>
-
-    <hr>
-
+    <dialog class="lightbox-dialog" aria-label="Expanded bakery image">
+        <button class="dialog-close lightbox-close" type="button" aria-label="Close expanded image">&times;</button>
+        <img class="lightbox-image" alt="">
+    </dialog>
     <footer class="site-footer">
-        <p>&copy; 2026 Apex Artisanal Bakery. All Rights Reserved.</p>
-        <p>Freshly Baked • Handmade • Quality You Can Trust</p>
+        <p><strong>Apex Artisanal Bakery</strong></p>
+        <p>Freshly baked · Handmade · Quality guaranteed</p>
+        <p>&copy; 2026 Apex Artisanal Bakery</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
