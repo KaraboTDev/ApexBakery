@@ -25,13 +25,13 @@ A responsive static website for Apex Artisanal Bakery, presenting its story, pro
 
 ## Run locally
 
-No build step or package installation is required. Open `Homepage.html` in a browser, or serve this folder with any static web server:
+No build step or package installation is required. Open `index.html` in a browser, or serve this folder with any static web server:
 
 ```text
 python -m http.server
 ```
 
-Then visit `http://localhost:8000/Homepage.html`.
+Then visit `http://localhost:8000/index.html`.
 
 ## Deployment
 
@@ -50,10 +50,10 @@ The [_headers](./_headers) file is used by Netlify for security headers. GitHub 
 
 ### 2026-11-01
 
-- Updated `Homepage.html`, `Products.html`, `Gallery.html`, `AboutUs.html`, and `Contact.html` with consistent metadata, headings, navigation, accessibility improvements and genuine bakery structured data.
+- Updated `index.html`, `Products.html`, `Gallery.html`, `AboutUs.html`, and `Contact.html` with consistent metadata, headings, navigation, accessibility improvements and genuine bakery structured data.
 - Added `enquiry.html` with validated product/service enquiry fields and a transparent static-site email handoff.
 - Added product search, category filtering, sorting and no-results feedback in `Products.html` and `script.js`.
-- Added a keyboard-accessible gallery lightbox to `Homepage.html` and `Gallery.html`.
+- Added a keyboard-accessible gallery lightbox to `index.html` and `Gallery.html`.
 - Added responsive form controls, focus states, reduced-motion support and lazy image loading in `style.css`.
 - Added `robots.txt` and `_headers` for crawling and supported hosting security configuration.
 - Repaired malformed document structures and removed the missing `bakery-team.jpg` reference instead of inventing an asset.
